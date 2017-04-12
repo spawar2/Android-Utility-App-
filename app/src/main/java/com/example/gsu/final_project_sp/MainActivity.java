@@ -41,20 +41,20 @@ import java.util.ArrayList;
 
 public class MainActivity extends BaseActivty implements View.OnTouchListener {
 
-    private ImageButton bt1;
-    private ImageButton bt2;
-
+    private Button bt1;
+    private Button bt2;
+    private Button bt101;
     private Button main_timer_bt_2;
     private Button main_timer_bt_3;
-    private ImageButton bt33;
+    private Button bt33;
+    private Button bt102;
 
     private GestureDetector mGestureDetector;
-    private ImageButton tog_id;
+    private Button tog_id;
     private DrawerLayout mDrawerLayout;
     private ActionBarDrawerToggle mToggle;
-
     private Button bt333;
-
+    private Button bt34;
 
     @BindView(R.id.main_fl)
     RelativeLayout fl;
@@ -114,13 +114,16 @@ public class MainActivity extends BaseActivty implements View.OnTouchListener {
     }
 
     private void initialView(){
-        bt1 = (ImageButton) findViewById(R.id.bt1);
-        bt2 = (ImageButton) findViewById(R.id.bt2);
+        bt1 = (Button) findViewById(R.id.bt1);
+        bt2 = (Button) findViewById(R.id.bt2);
         bt3 = (Button) findViewById(R.id.muzic);
         main_timer_bt_2 = (Button) findViewById(R.id.main_timer_bt_2);
         main_timer_bt_3 = (Button) findViewById(R.id.main_timer_bt_3);
-        bt33 = (ImageButton) findViewById(R.id.id_bt3);
+        bt33 = (Button) findViewById(R.id.id_bt3);
         bt333 = (Button) findViewById(R.id.main_timer_bt);
+        bt34 = (Button) findViewById(R.id.todo);
+        bt101 = (Button) findViewById(R.id.id_bt101);
+        bt102 = (Button) findViewById(R.id.id_bt102);
 
   /*      bt1 = (ImageButton) findViewById(R.id.bt1);
         ;
@@ -214,6 +217,43 @@ public class MainActivity extends BaseActivty implements View.OnTouchListener {
             }
         });
 
+        bt34.setOnClickListener(new View.OnClickListener() {
+
+
+            @Override
+            public void onClick(View v) {
+
+                //       Intent intent = new Intent(v.getContext(), ListViewActivity.class);
+                //     startActivity(intent);
+                Intent intent = new Intent(v.getContext(), TodoList.class);
+                startActivityForResult(intent,3);
+            }
+        });
+
+        bt101.setOnClickListener(new View.OnClickListener() {
+
+
+            @Override
+            public void onClick(View v) {
+
+                //       Intent intent = new Intent(v.getContext(), ListViewActivity.class);
+                //     startActivity(intent);
+                Intent intent = new Intent(v.getContext(), Stepcount.class);
+                startActivityForResult(intent,3);
+            }
+        });
+        bt102.setOnClickListener(new View.OnClickListener() {
+
+
+            @Override
+            public void onClick(View v) {
+
+                //       Intent intent = new Intent(v.getContext(), ListViewActivity.class);
+                //     startActivity(intent);
+                Intent intent = new Intent(v.getContext(), BottleActivity.class);
+                startActivityForResult(intent,3);
+            }
+        });
 
        /* bt1.setOnClickListener(new View.OnClickListener() {
             @Override

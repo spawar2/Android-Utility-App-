@@ -15,16 +15,6 @@
         android:layout_alignParentTop="true"
         android:background="@android:color/holo_red_dark">
 
-        <ImageButton
-
-            android:layout_width="36dp"
-            android:layout_height="36dp"
-            android:layout_centerVertical="true"
-            android:layout_alignParentLeft="true"
-            android:background="@android:color/transparent"
-            android:src="@mipmap/ic_launcher"
-            android:id="@+id/tog_id"
-            android:layout_marginLeft="12dp"/>
 
 
         <TextView
@@ -42,7 +32,6 @@
             android:layout_height="36dp"
             android:layout_centerVertical="true"
             android:background="@android:color/transparent"
-            android:src="@mipmap/ic_launcher"
             android:layout_marginLeft="12dp"
             android:layout_alignParentRight="true"
             android:id="@+id/activityswitch"
@@ -59,41 +48,8 @@
         android:orientation="horizontal"
         android:background="@android:color/holo_red_dark">
 
-        <ImageButton
-            android:id="@+id/bt1"
-            android:src="@mipmap/cal"
-            android:scaleType="fitXY"
-            android:layout_width="0dp"
-            android:layout_height="36dp"
-            android:layout_marginLeft="6dp"
-            android:layout_marginRight="6dp"
-            android:layout_gravity="center_vertical"
-            android:background="@android:color/white"
-            android:layout_weight="1" />
 
-        <ImageButton
-            android:id="@+id/bt2"
-            android:src="@mipmap/images"
-            android:scaleType="fitXY"
-            android:layout_width="0dp"
-            android:layout_height="36dp"
-            android:layout_marginLeft="6dp"
-            android:layout_marginRight="6dp"
-            android:layout_gravity="center_vertical"
-            android:background="@android:color/white"
-            android:layout_weight="1"/>
 
-        <ImageButton
-            android:id="@+id/id_bt3"
-            android:layout_width="0dp"
-            android:layout_height="36dp"
-            android:layout_marginLeft="6dp"
-            android:layout_marginRight="6dp"
-            android:layout_gravity="center_vertical"
-            android:onClick="sendMessage"
-            android:background="@android:color/white"
-            android:layout_weight="1"
-            />
 
     </LinearLayout>
 
@@ -135,69 +91,139 @@
                 <Button
                     android:id="@+id/main_timer_bt_2"
 
-                    android:layout_width="100dp"
-                    android:layout_height="60dp"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
                     android:text="Animation"
                     android:textAllCaps="false"
                     android:background="@color/colorPrimaryDark"
-                    android:textSize="20sp"
+                    android:textSize="10sp"
                     />
 
                 <Button
                     android:id="@+id/main_timer_bt_3"
                     android:layout_toRightOf="@id/main_timer_bt_2"
-                    android:layout_width="100dp"
-                    android:layout_height="60dp"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
                     android:text="Animator"
                     android:textAllCaps="false"
                     android:background="@color/colorPrimaryDark"
-                    android:textSize="20sp"
+                    android:textSize="10sp"
                     />
 
                 <Button
                     android:id="@+id/muzic"
                     android:layout_toRightOf="@id/main_timer_bt_3"
-                    android:layout_width="70dp"
-                    android:layout_height="60dp"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
                     android:text="Play"
                     android:textAllCaps="false"
                     android:background="@color/colorPrimaryDark"
-                    android:textSize="20sp"
+                    android:textSize="10sp"
                     android:layout_alignParentTop="true"
                     />
 
                 <Button
                     android:id="@+id/custdialog"
                     android:layout_toRightOf="@id/muzic"
-                    android:layout_width="70dp"
-                    android:layout_height="60dp"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
                     android:text="Dialog"
                     android:textAllCaps="false"
                     android:background="@color/colorPrimaryDark"
-                    android:textSize="20sp"
+                    android:textSize="10sp"
                     android:layout_alignParentTop="true"
                     />
 
                 <Button
                     android:id="@+id/main_timer_bt_4"
-                    android:layout_below="@id/custdialog"
-                    android:layout_width="100dp"
-                    android:layout_height="60dp"
+                    android:layout_toRightOf="@id/custdialog"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
                     android:text="Interface"
                     android:textAllCaps="false"
                     android:background="@color/colorPrimaryDark"
-                    android:textSize="20sp"
+                    android:textSize="10sp"
                     />
 
                 <Button
                     android:id="@+id/main_timer_bt"
-                    android:layout_below="@id/main_timer_bt_4"
-                    android:layout_width="100dp"
-                    android:layout_height="60dp"
+                    android:layout_toRightOf="@id/main_timer_bt_4"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
                     android:text="Timer"
                     android:textAllCaps="false"
                     android:background="@color/colorPrimaryDark"
-                    android:textSize="20sp"
+                    android:textSize="10sp"
+                    />
+
+                <Button
+                    android:id="@+id/todo"
+                    android:layout_toRightOf="@id/main_timer_bt"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:text="To do list"
+                    android:textAllCaps="false"
+                    android:background="@color/colorPrimaryDark"
+                    android:textSize="10sp"
+                    />
+
+                <Button
+                    android:id="@+id/bt1"
+                    android:layout_below="@id/main_timer_bt"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:text="Calculator"
+                    android:textAllCaps="false"
+                    android:background="@color/colorPrimaryDark"
+                    android:textSize="10sp"
+                    />
+
+                <Button
+                    android:id="@+id/bt2"
+                    android:layout_toRightOf="@id/bt1"
+                    android:layout_below="@id/main_timer_bt"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:text="Photos"
+                    android:textAllCaps="false"
+                    android:background="@color/colorPrimaryDark"
+                    android:textSize="10sp"
+                    />
+
+                <Button
+                    android:id="@+id/id_bt3"
+                    android:layout_toRightOf="@id/bt2"
+                    android:layout_below="@id/main_timer_bt"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:text="ListView"
+                    android:textAllCaps="false"
+                    android:background="@color/colorPrimaryDark"
+                    android:textSize="10sp"
+                    />
+
+                <Button
+                    android:id="@+id/id_bt101"
+                    android:layout_toRightOf="@id/id_bt3"
+                    android:layout_below="@id/main_timer_bt"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:text="StepCount"
+                    android:textAllCaps="false"
+                    android:background="@color/colorPrimaryDark"
+                    android:textSize="10sp"
+                    />
+
+                <Button
+                    android:id="@+id/id_bt102"
+                    android:layout_toRightOf="@id/id_bt101"
+                    android:layout_below="@id/main_timer_bt"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:text="Drinkgame"
+                    android:textAllCaps="false"
+                    android:background="@color/colorPrimaryDark"
+                    android:textSize="10sp"
                     />
 
             </RelativeLayout>
