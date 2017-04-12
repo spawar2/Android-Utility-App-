@@ -91,6 +91,8 @@ public class MainActivity extends BaseActivty implements View.OnTouchListener {
     private ArrayList<BaseAudioOb> contentList = new ArrayList<BaseAudioOb>();
     private Button bt3;
 
+    public ViewPager ViewPager1;
+    public CustomAdapter adapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -104,6 +106,10 @@ public class MainActivity extends BaseActivty implements View.OnTouchListener {
         fl.setOnTouchListener(this);
 
         mDrawerLayout = (DrawerLayout) findViewById(R.id.drawerLayout);
+
+        ViewPager1=(ViewPager)findViewById(R.id.VIEW_PAGER);
+        adapter=new CustomAdapter(this);
+        ViewPager1.setAdapter(adapter);
 
     }
 

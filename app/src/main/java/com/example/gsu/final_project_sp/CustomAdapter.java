@@ -14,7 +14,7 @@ import android.widget.LinearLayout;
 
 public class CustomAdapter extends PagerAdapter {
 
-    public int[] images = {R.drawable.pic3, R.drawable.pic4, R.drawable.pic5, R.drawable.pic6, R.drawable.pic7, R.drawable.pic8};
+    public int[] images = {R.mipmap.mari, R.mipmap.calc, R.mipmap.pedo};
     public LayoutInflater inflater;
     public Context ctx;
 

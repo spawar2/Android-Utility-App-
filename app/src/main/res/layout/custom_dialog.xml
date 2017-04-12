@@ -25,7 +25,7 @@
 
     <Button
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="600dp"
         android:id="@+id/dialog_ok"
         android:text="OK"
         android:textSize="36sp"
