@@ -215,6 +215,18 @@
                     android:textAllCaps="false"
                     android:textSize="10sp" />
 
+
+                <Button
+                    android:id="@+id/id_bt103"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_below="@id/main_timer_bt"
+                    android:layout_toRightOf="@id/id_bt102"
+                    android:background="@color/colorPrimaryDark"
+                    android:text="OneMemo"
+                    android:textAllCaps="false"
+                    android:textSize="10sp" />
+
                 <android.support.v4.view.ViewPager
                     android:id="@+id/VIEW_PAGER"
                     android:layout_width="match_parent"

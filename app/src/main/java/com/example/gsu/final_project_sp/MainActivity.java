@@ -48,6 +48,7 @@ public class MainActivity extends BaseActivty implements View.OnTouchListener {
     private Button main_timer_bt_3;
     private Button bt33;
     private Button bt102;
+    private Button bt103;
 
     private GestureDetector mGestureDetector;
     private Button tog_id;
@@ -130,7 +131,7 @@ public class MainActivity extends BaseActivty implements View.OnTouchListener {
         bt34 = (Button) findViewById(R.id.todo);
         bt101 = (Button) findViewById(R.id.id_bt101);
         bt102 = (Button) findViewById(R.id.id_bt102);
-
+        bt103 = (Button) findViewById(R.id.id_bt103);
   /*      bt1 = (ImageButton) findViewById(R.id.bt1);
         ;
         activityswitch = (ImageButton) findViewById(R.id.activityswitch);
@@ -257,6 +258,18 @@ public class MainActivity extends BaseActivty implements View.OnTouchListener {
                 //       Intent intent = new Intent(v.getContext(), ListViewActivity.class);
                 //     startActivity(intent);
                 Intent intent = new Intent(v.getContext(), BottleActivity.class);
+                startActivityForResult(intent,3);
+            }
+        });
+        bt103.setOnClickListener(new View.OnClickListener() {
+
+
+            @Override
+            public void onClick(View v) {
+
+                //       Intent intent = new Intent(v.getContext(), ListViewActivity.class);
+                //     startActivity(intent);
+                Intent intent = new Intent(v.getContext(), OneMemo.class);
                 startActivityForResult(intent,3);
             }
         });

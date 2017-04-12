@@ -36,7 +36,8 @@
         <activity android:name=".EditFieldClass" />
         <activity android:name=".EditMessageClass" />
         <activity android:name=".Stepcount" />
-        <activity android:name=".BottleActivity"></activity>
+        <activity android:name=".BottleActivity" />
+        <activity android:name=".OneMemo"></activity>
     </application>
 
 </manifest>
